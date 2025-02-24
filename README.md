@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: forgetting to clean up after package installations.  The initial build may succeed, but subsequent builds fail because of stale package lists.  The solution shows the best practice of including `apt-get clean` to avoid this issue.  This helps to ensure consistency and avoids unnecessary cache issues.
